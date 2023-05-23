@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run --detach \
-       --publish 50000:80 \
+       --publish 50000:50000 \
        --name fuota-server \
        --env US_AUTH_USERNAME=server_username \
        --env US_AUTH_PASSWORD=server_password \
