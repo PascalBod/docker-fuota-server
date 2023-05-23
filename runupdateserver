@@ -1,0 +1,11 @@
+#!/bin/bash
+docker run --detach \
+       --publish 50000:80 \
+       --name updateserver \
+       --env US_AUTH_USERNAME=server_username \
+       --env US_AUTH_PASSWORD=server_password \
+       --env US_SERVER_PORT=50000 \
+       --volume runningupdateserver:/usr/src/data \
+       --restart always \
+       systev-update-server
+       
