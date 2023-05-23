@@ -283,15 +283,15 @@ $ # First, get volume information.
 $ docker volume inspect fuota-server-volume
 [
     {
-        "CreatedAt": "2022-10-30T05:38:56Z",
+        "CreatedAt": "2023-05-23T11:47:05+02:00",
         "Driver": "local",
         "Labels": null,
         "Mountpoint": "/var/lib/docker/volumes/fuota-server-volume/_data",
-        "Name": "runningupdateserver",
+        "Name": "fuota-server-volume",
         "Options": null,
         "Scope": "local"
     }
 ]
 $ # Then, list the content of the mountpoint directory.
-$ ls /var/lib/docker/volumes/fuota-server-volume/_data
+$ sudo ls /var/lib/docker/volumes/fuota-server-volume/_data
 ```
