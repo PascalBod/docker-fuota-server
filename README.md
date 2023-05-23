@@ -264,7 +264,7 @@ The container uses a named volume to store data that must be persisted:
 To create and run a container:
 
 ```bash
-$ cd docker-fuota-server/docker
+$ cd docker-fuota-server
 ./run_fuota_server
 ```
 
